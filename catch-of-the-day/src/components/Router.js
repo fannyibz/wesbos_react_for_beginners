@@ -1,5 +1,6 @@
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { StorePicker } from "./StorePicker";
+import StorePicker from "./StorePicker";
 
 const Router = () => (
   <BrowserRouter>
@@ -8,3 +9,5 @@ const Router = () => (
     </Switch>
   </BrowserRouter>
 );
+
+export default Router;
