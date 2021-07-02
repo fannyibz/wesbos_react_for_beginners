@@ -4,12 +4,17 @@ import Order from "./Order";
 import Invetory from "./Invetory";
 import sampleFishes from "../sample-fishes";
 import Fish from "./Fish";
+import base from "../base";
 
 class App extends React.Component {
   state = {
     fishes: {},
     order: {},
   };
+
+  componentDidMount() {
+    console.log("Mounted!!!");
+  }
 
   addFish = (fish) => {
     // 1. Take a copy of the existing state
